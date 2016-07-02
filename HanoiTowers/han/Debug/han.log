@@ -1,0 +1,22 @@
+﻿Сборка начата 02.07.2016 13:53:21.
+     1>Проект "D:\uni\projects\han\han\han.vcxproj" в узле 2 (целевые объекты Build).
+     1>ClCompile:
+         D:\Programs\Visual Studio\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt han.cpp
+         han.cpp
+     1>d:\uni\projects\han\han\han.cpp(29): warning C4244: аргумент: преобразование "size_t" в "GLfloat", возможна потеря данных
+     1>d:\uni\projects\han\han\han.cpp(29): warning C4244: аргумент: преобразование "const int" в "GLfloat", возможна потеря данных
+     1>d:\uni\projects\han\han\han.cpp(30): warning C4244: аргумент: преобразование "size_t" в "GLfloat", возможна потеря данных
+     1>d:\uni\projects\han\han\han.cpp(30): warning C4244: аргумент: преобразование "const int" в "GLfloat", возможна потеря данных
+     1>d:\uni\projects\han\han\han.cpp(31): warning C4244: аргумент: преобразование "size_t" в "GLfloat", возможна потеря данных
+     1>d:\uni\projects\han\han\han.cpp(31): warning C4244: аргумент: преобразование "const int" в "GLfloat", возможна потеря данных
+     1>d:\uni\projects\han\han\han.cpp(32): warning C4244: аргумент: преобразование "size_t" в "GLfloat", возможна потеря данных
+     1>d:\uni\projects\han\han\han.cpp(32): warning C4244: аргумент: преобразование "const int" в "GLfloat", возможна потеря данных
+       Link:
+         D:\Programs\Visual Studio\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\uni\projects\han\Debug\han.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\uni\projects\han\Debug\han.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\uni\projects\han\Debug\han.lib" /MACHINE:X86 Debug\han.obj
+         Debug\stdafx.obj
+         han.vcxproj -> D:\uni\projects\han\Debug\han.exe
+     1>Сборка проекта "D:\uni\projects\han\han\han.vcxproj" завершена (целевые объекты Build).
+
+Сборка успешно завершена.
+
+Затраченное время: 00:00:02.06
