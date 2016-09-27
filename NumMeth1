@@ -1,0 +1,71 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+double func(double c)
+{
+	return (cos(c) + 2) / 3; //c*c + 2 * c; //2 * sin(3 * c) - 1;
+}
+
+double funcDer(double c)
+{
+	return 2 * c + 2; //6*cos(3 * c);
+}
+
+void mDichotomy(double a, double b, double eps)
+{
+	double c;
+	while (b - a > eps)
+	{
+		c = (a + b) / 2;
+		if (func(a)*func(c) <= 0)
+			b = c;
+		else
+			a = c;
+	}
+	cout << (a + b) / 2 << "\n";
+}
+
+void mNewton(double a, double eps)
+{
+	double aNext = a - func(a) / funcDer(a);
+	while (abs(aNext - a) >= eps)
+	{
+		a = aNext;
+		if (funcDer(a) == 0)
+		{
+			cout << "Der = 0";
+			return;
+		}
+		aNext = a - func(a) / funcDer(a);
+	}
+	cout << aNext << "\n";
+}
+
+void simpleIter(double a, double eps)
+{
+	double aNext = func(a);
+	while (abs(func(aNext) - aNext) >= eps)
+	{
+		a = aNext;
+		aNext = func(a);
+	}
+	cout << aNext << "\n";
+}
+ 
+int main()
+{
+	double a = 1, b = 5, eps = 0.000001;
+	if (func(a) * func(b) >= 0)
+	{
+		cout << "Number of solutions is odd\n";
+	}
+	else
+	{
+		mDichotomy(a, b, eps);
+	}
+	//mNewton(a, eps);
+	simpleIter(a, eps);
+	return 0;
+}
